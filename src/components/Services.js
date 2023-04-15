@@ -17,6 +17,11 @@ const ServicesGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 50px;
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
 `;
 
 const ServicesItem = styled.div`
@@ -34,11 +39,19 @@ const ServicesIcon = styled.i`
 const ServicesName = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const ServicesDescription = styled.p`
   font-size: 1.2rem;
   color: #888888;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 function Services() {

@@ -19,6 +19,13 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: #F8F8F8;
   }
+
+  @media screen and (max-width: 768px) {
+    /* Style for smaller screens */
+    .App {
+      padding-top: 60px;
+    }
+  }
 `;
 
 function App() {

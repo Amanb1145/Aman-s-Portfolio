@@ -4,12 +4,21 @@ import styled from 'styled-components';
 const SkillsContainer = styled.section`
   padding: 100px 50px;
   background-color: #FFFFFF;
+
+  @media (max-width: 768px) {
+    padding: 50px 20px;
+  }
 `;
 
 const SkillsTitle = styled.h2`
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const SkillsList = styled.ul`
@@ -28,6 +37,12 @@ const SkillsItem = styled.li`
   padding: 15px 30px;
   margin: 10px;
   border-radius: 5px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+  }
 `;
 
 function Skills() {

@@ -17,11 +17,16 @@ const PortfolioGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 50px;
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 `;
 
 const PortfolioItem = styled.div`
   position: relative;
   overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 
   &:hover .overlay {
     opacity: 1;
@@ -29,7 +34,8 @@ const PortfolioItem = styled.div`
   }
 
   &:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
   }
 `;
 

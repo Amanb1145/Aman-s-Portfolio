@@ -12,6 +12,10 @@ const AboutContainer = styled.section`
   @media (max-width: 768px) {
     padding: 100px 20px;
   }
+
+  @media (max-width: 480px) {
+    padding: 80px 10px;
+  }
 `;
 
 const AboutImg = styled.img`
@@ -19,12 +23,26 @@ const AboutImg = styled.img`
   height: 300px;
   border-radius: 50%;
   margin-left: 100px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 480px) {
+    width: 200px;
+    height: 200px;
+  }
 `;
 
 const AboutContent = styled.div`
   max-width: 600px;
   text-align: justify;
   margin-right: 70px;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
 `;
 
 const AboutTitle = styled.h2`

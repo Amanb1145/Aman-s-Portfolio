@@ -9,6 +9,10 @@ const FooterContainer = styled.footer`
   justify-content: center;
   align-items: center;
   color: #E54B4B;
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 20px;
+  }
 `;
 
 const FooterLogo = styled.a`
@@ -17,13 +21,23 @@ const FooterLogo = styled.a`
   color: #E54B4B;
   text-decoration: none;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const FooterLinks = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 `;
 
 const FooterLink = styled.a`
@@ -36,17 +50,29 @@ const FooterLink = styled.a`
   &:hover {
     color: #555555;
   }
+
+  @media screen and (max-width: 768px) {
+    margin: 5px;
+  }
 `;
 
 const FooterText = styled.p`
   font-size: 1rem;
   margin: 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const FooterPhone = styled.span`
   font-size: 1.2rem;
   color: #E54B4B;
   margin: 0 20px;
+
+  @media screen and (max-width: 768px) {
+    margin: 10px 0;
+  }
 `;
 
 function Footer() {
@@ -55,7 +81,7 @@ function Footer() {
         <FooterLogo href="/">Aman Bishnoi</FooterLogo>
         <FooterLinks>
           <FooterLink href="mailto:amanb1145@gmail.com">amanb1145@gmail.com</FooterLink>
-          <FooterLink href="https://www.linkedin.com/in/yourlinkedin">LinkedIn</FooterLink>
+          <FooterLink href="https://www.linkedin.com/in/aman-j-bishnoi/">LinkedIn</FooterLink>
           <FooterPhone>+91 88821-62052</FooterPhone>
         </FooterLinks>
         <FooterText>© 2023 Aman Bishnoi. All rights reserved.</FooterText>
