@@ -30,11 +30,18 @@ const NavLogo = styled.a`
   font-weight: bold;
   color: #E54B4B;
   text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #555555;
+  }
 
   @media screen and (max-width: 600px) {
     margin-bottom: 20px;
   }
 `;
+
+
 
 const NavMenu = styled.ul`
   display: flex;
@@ -46,11 +53,14 @@ const NavMenu = styled.ul`
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
+    font-size: 1rem;
   }
 `;
 
+
 const NavItem = styled.li`
   margin-left: 20px;
+  font-size: 1.2rem;
 
   @media screen and (max-width: 960px) {
     margin: 0;
@@ -64,6 +74,8 @@ const NavItem = styled.li`
   }
 `;
 
+
+
 const NavLink = styled.a`
   font-size: 1.2rem;
   color: #555555;
@@ -73,7 +85,14 @@ const NavLink = styled.a`
   &:hover {
     color: #E54B4B;
   }
+
+  &.active {
+    background-color: #E54B4B;
+    color: #FFFFFF;
+  }
 `;
+
+
 
 function Navbar() {
   return (

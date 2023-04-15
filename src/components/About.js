@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const AboutContainer = styled.section`
   padding: 100px 50px;
@@ -19,10 +20,10 @@ const AboutContainer = styled.section`
 `;
 
 const AboutImg = styled.img`
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  margin-left: 100px;
+  margin-left: 150px;
 
   @media (max-width: 768px) {
     margin-left: 0;
@@ -30,18 +31,20 @@ const AboutImg = styled.img`
   }
 
   @media (max-width: 480px) {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 `;
 
 const AboutContent = styled.div`
-  max-width: 600px;
+  flex: 1;
   text-align: justify;
-  margin-right: 70px;
+  margin-left: 70px;
+  max-width: 600px;
 
   @media (max-width: 768px) {
-    margin-right: 0;
+    margin-left: 0;
+    margin-top: 30px;
   }
 `;
 
@@ -72,16 +75,39 @@ const AboutWrapper = styled.div`
   }
 `;
 
+const ProfilePicture = 'https://videowikistorage.blob.core.windows.net/cast-dev-db/WhatsApp Image 2023-04-16 at 1.09.00 AM.jpeg';
+const ProfileDescription = 'Hello, I am Aman Bishnoi - a web developer with expertise in building custom, responsive websites using the latest web development technologies like Python, Django, React, and REST framework. With experience working with cloud platforms like AWS and Azure, I aim to create web solutions that are both scalable and efficient. In my free time, I enjoy hiking, reading, and experimenting with new technologies.';
+
+const SocialContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+`;
+
+const SocialLink = styled.a`
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #000;
+
+  &:hover {
+    color: #0077b5;
+  }
+`;
+
 function About() {
   return (
     <AboutContainer id="about">
       <AboutTitle>About Me</AboutTitle>
       <AboutWrapper>
         <AboutContent>
-          <AboutText>I am a web developer specializing in creating custom, responsive websites using the latest web development technologies such as Python, Django, React, and REST framework. I also have experience working with cloud platforms such as AWS and Azure, as well as blockchain technologies.</AboutText>
-          <AboutText>In my free time, I enjoy hiking, reading, and experimenting with new technologies.</AboutText>
+          <AboutText>{ProfileDescription}</AboutText>
+          <SocialContainer>
+            <SocialLink href="https://www.linkedin.com/in/aman-j-bishnoi/" target="_blank"><FaLinkedin /></SocialLink>
+            <SocialLink href="https://www.instagram.com/amanb1145/" target="_blank"><FaInstagram /></SocialLink>
+          </SocialContainer>
         </AboutContent>
-        <AboutImg src="https://videowikistorage.blob.core.windows.net/cast-dev-db/WhatsApp Image 2023-04-16 at 1.09.00 AM.jpeg" alt="Profile Picture" />
+        <AboutImg src={ProfilePicture} alt="Profile Picture of ChatGPT" />
       </AboutWrapper>
     </AboutContainer>
   );

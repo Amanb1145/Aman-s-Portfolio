@@ -42,13 +42,13 @@ const FooterLinks = styled.div`
 
 const FooterLink = styled.a`
   font-size: 1.2rem;
-  color: #E54B4B;
+  color: #555555;
   text-decoration: none;
   margin: 0 20px;
   transition: all 0.3s ease;
 
   &:hover {
-    color: #555555;
+    color: #E54B4B;
   }
 
   @media screen and (max-width: 768px) {
@@ -58,6 +58,7 @@ const FooterLink = styled.a`
 
 const FooterText = styled.p`
   font-size: 1rem;
+  color: #555555;
   margin: 0;
 
   @media screen and (max-width: 768px) {
@@ -67,7 +68,7 @@ const FooterText = styled.p`
 
 const FooterPhone = styled.span`
   font-size: 1.2rem;
-  color: #E54B4B;
+  color: #555555;
   margin: 0 20px;
 
   @media screen and (max-width: 768px) {
@@ -76,17 +77,23 @@ const FooterPhone = styled.span`
 `;
 
 function Footer() {
-    return (
-      <FooterContainer>
-        <FooterLogo href="/">Aman Bishnoi</FooterLogo>
-        <FooterLinks>
-          <FooterLink href="mailto:amanb1145@gmail.com">amanb1145@gmail.com</FooterLink>
-          <FooterLink href="https://www.linkedin.com/in/aman-j-bishnoi/">LinkedIn</FooterLink>
-          <FooterPhone>+91 88821-62052</FooterPhone>
-        </FooterLinks>
-        <FooterText>© 2023 Aman Bishnoi. All rights reserved.</FooterText>
-      </FooterContainer>
-    );
-  }
+  return (
+    <FooterContainer>
+      <FooterLogo href="/">Aman Bishnoi</FooterLogo>
+      <FooterLinks>
+        <FooterLink href="/">Home</FooterLink>
+        <FooterLink href="#about">About</FooterLink>
+        <FooterLink href="#skills">Skills</FooterLink>
+        <FooterLink href="#services">Services</FooterLink>
+      </FooterLinks>
+      <FooterLinks>
+        <FooterLink href="mailto:amanb1145@gmail.com" target="_blank">amanb1145@gmail.com</FooterLink>
+        <FooterLink href="https://www.linkedin.com/in/aman-j-bishnoi/" target="_blank">LinkedIn</FooterLink>
+        <FooterPhone>+91 88821-62052</FooterPhone>
+      </FooterLinks>
+      <FooterText>© 2023 Aman Bishnoi. All rights reserved.</FooterText>
+    </FooterContainer>
+  );
+}
 
 export default Footer;

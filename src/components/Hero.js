@@ -70,7 +70,7 @@ function Hero() {
   return (
     <HeroContainer>
       <HeroTitle>Welcome to My Portfolio</HeroTitle>
-      <HeroButton href="https://www.linkedin.com/in/aman-j-bishnoi/">Learn More</HeroButton>
+      <HeroButton href="https://www.linkedin.com/in/aman-j-bishnoi/" target="_blank">Learn More</HeroButton>
     </HeroContainer>
   );
 }

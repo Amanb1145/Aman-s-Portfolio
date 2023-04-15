@@ -1,5 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faServer, faCubes } from '@fortawesome/free-solid-svg-icons';
+import { faDocker } from '@fortawesome/free-brands-svg-icons/faDocker';
+import { faGripfire } from '@fortawesome/free-brands-svg-icons/faGripfire';
+import { faGem } from '@fortawesome/free-solid-svg-icons/faGem';
+import { faCube } from '@fortawesome/free-solid-svg-icons/faCube';
 
 const SkillsContainer = styled.section`
   padding: 100px 50px;
@@ -50,13 +57,30 @@ function Skills() {
     <SkillsContainer id="skills">
       <SkillsTitle>Skills</SkillsTitle>
       <SkillsList>
-        <SkillsItem>Python</SkillsItem>
-        <SkillsItem>Django</SkillsItem>
-        <SkillsItem>React</SkillsItem>
-        <SkillsItem>REST framework</SkillsItem>
-        <SkillsItem>AWS</SkillsItem>
-        <SkillsItem>Azure</SkillsItem>
-        <SkillsItem>Blockchain</SkillsItem>
+        <SkillsItem>
+          <FontAwesomeIcon icon={faPython} /> Python
+        </SkillsItem>
+        <SkillsItem>
+          <FontAwesomeIcon icon={faServer} /> Django
+        </SkillsItem>
+        <SkillsItem>
+          <FontAwesomeIcon icon={faReact} /> React
+        </SkillsItem>
+        <SkillsItem>
+          <FontAwesomeIcon icon={faCube} /> REST Framework
+        </SkillsItem>
+        <SkillsItem>
+          <FontAwesomeIcon icon={faGripfire} /> AWS
+        </SkillsItem>
+        <SkillsItem>
+          <FontAwesomeIcon icon={faCubes} /> Azure
+        </SkillsItem>
+        <SkillsItem>
+          <FontAwesomeIcon icon={faGem} /> Blockchain
+        </SkillsItem>
+        <SkillsItem>
+          <FontAwesomeIcon icon={faDocker} /> Docker
+        </SkillsItem>
       </SkillsList>
     </SkillsContainer>
   );

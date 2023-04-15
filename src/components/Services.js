@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptopCode, faCloud, faTools } from '@fortawesome/free-solid-svg-icons';
 
 const ServicesContainer = styled.section`
   padding: 100px 50px;
@@ -31,7 +33,7 @@ const ServicesItem = styled.div`
   text-align: center;
 `;
 
-const ServicesIcon = styled.i`
+const ServicesIcon = styled(FontAwesomeIcon)`
   font-size: 3rem;
   margin-bottom: 1rem;
 `;
@@ -60,17 +62,17 @@ function Services() {
       <ServicesTitle>My Services</ServicesTitle>
       <ServicesGrid>
         <ServicesItem>
-          <ServicesIcon className="fas fa-laptop-code"></ServicesIcon>
+          <ServicesIcon icon={faLaptopCode} />
           <ServicesName>Web Development</ServicesName>
           <ServicesDescription>As a web developer, I specialize in creating custom, responsive websites using the latest web development technologies such as Python, Django, React, and REST frameworks. I can work with you to design and develop a website that reflects your brand and meets your business needs.</ServicesDescription>
         </ServicesItem>
         <ServicesItem>
-          <ServicesIcon className="fas fa-database"></ServicesIcon>
+          <ServicesIcon icon={faCloud} />
           <ServicesName>Cloud Services</ServicesName>
           <ServicesDescription>I can help you take advantage of the benefits of cloud computing by deploying your applications on cloud platforms like AWS and Azure. I have expertise in designing, developing, and deploying cloud-based applications that are secure, scalable, and reliable.</ServicesDescription>
         </ServicesItem>
         <ServicesItem>
-          <ServicesIcon className="fas fa-database"></ServicesIcon>
+          <ServicesIcon icon={faTools} />
           <ServicesName>Post-Deployment Support</ServicesName>
           <ServicesDescription>I understand that launching a new application can be daunting, which is why I offer post-deployment support services to ensure that your application is functioning properly and meeting your business objectives. I provide ongoing maintenance, monitoring, and troubleshooting services to keep your application running smoothly. Whether you need updates, bug fixes, or performance optimizations, I'm here to help.</ServicesDescription>
         </ServicesItem>
