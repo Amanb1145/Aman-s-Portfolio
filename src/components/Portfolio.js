@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const PortfolioContainer = styled.section`
   padding: 100px 50px;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
 `;
 
 const PortfolioTitle = styled.h2`
