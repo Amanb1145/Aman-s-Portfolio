@@ -109,7 +109,7 @@ function Navbar() {
           <NavLink href="#skills">Skills</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#services">Services</NavLink>
+          <NavLink href="#expertise">Expertise</NavLink>
         </NavItem>
       </NavMenu>
     </NavContainer>

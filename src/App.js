@@ -2,7 +2,7 @@ import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero.js';
-import Services from './components/Services';
+import Expertise from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
@@ -36,7 +36,7 @@ function App() {
       <Hero />
       <About />
       <Contact />
-      <Services />
+      <Expertise />
       <Portfolio />
       <Footer />
     </div>

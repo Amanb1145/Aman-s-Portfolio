@@ -21,7 +21,10 @@ const PortfolioGrid = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-`;
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+  }
+  `;
 
 const PortfolioItem = styled.div`
   position: relative;
@@ -73,7 +76,7 @@ function Portfolio() {
         <PortfolioItem>
           <PortfolioImage src="https://videowikistorage.blob.core.windows.net/cast-dev-db/vw1.png" alt="Project 1" />
           <PortfolioOverlay className="overlay">
-            <PortfolioTitleOverlay>VideoWIki</PortfolioTitleOverlay>
+            <PortfolioTitleOverlay>VideoWIki Editor</PortfolioTitleOverlay>
           </PortfolioOverlay>
         </PortfolioItem>
         <PortfolioItem>
@@ -86,6 +89,36 @@ function Portfolio() {
           <PortfolioImage src="https://videowikistorage.blob.core.windows.net/cast-dev-db/vwr.png" alt="Project 3" />
           <PortfolioOverlay className="overlay">
             <PortfolioTitleOverlay>VideoWiki Room</PortfolioTitleOverlay>
+          </PortfolioOverlay>
+        </PortfolioItem>
+        <PortfolioItem>
+          <PortfolioImage src="https://videowikistorage.blob.core.windows.net/cast-dev-db/teams.png" alt="Project 4" />
+          <PortfolioOverlay className="overlay">
+            <PortfolioTitleOverlay>Microsoft Teams Hackathon Runner-up</PortfolioTitleOverlay>
+          </PortfolioOverlay>
+        </PortfolioItem>
+        <PortfolioItem>
+          <PortfolioImage src="https://videowikistorage.blob.core.windows.net/cast-dev-db/telos.png" alt="Project 5" />
+          <PortfolioOverlay className="overlay">
+            <PortfolioTitleOverlay>Telos Spark Hackathon Finalists</PortfolioTitleOverlay>
+          </PortfolioOverlay>
+        </PortfolioItem>
+        <PortfolioItem>
+          <PortfolioImage src="https://videowikistorage.blob.core.windows.net/cast-dev-db/swarm.png" alt="Project 6" />
+          <PortfolioOverlay className="overlay">
+            <PortfolioTitleOverlay>VideoWIki Partnership with Swarm</PortfolioTitleOverlay>
+          </PortfolioOverlay>
+        </PortfolioItem>
+        <PortfolioItem>
+          <PortfolioImage src="https://videowikistorage.blob.core.windows.net/cast-dev-db/webex.png" alt="Project 7" />
+          <PortfolioOverlay className="overlay">
+            <PortfolioTitleOverlay>Published Bot on Webex App Hub</PortfolioTitleOverlay>
+          </PortfolioOverlay>
+        </PortfolioItem>
+        <PortfolioItem>
+          <PortfolioImage src="https://videowikistorage.blob.core.windows.net/cast-dev-db/ocean.jpeg" alt="Project 8" />
+          <PortfolioOverlay className="overlay">
+            <PortfolioTitleOverlay>Ocean Protocol Data Economy Challenge</PortfolioTitleOverlay>
           </PortfolioOverlay>
         </PortfolioItem>
       </PortfolioGrid>

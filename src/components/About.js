@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaMedium } from 'react-icons/fa';
 
 const AboutContainer = styled.section`
   padding: 100px 50px;
@@ -58,7 +58,7 @@ const AboutText = styled.p`
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 1rem;
-  color: #555555;
+  color: #555555;;
 `;
 
 
@@ -82,7 +82,7 @@ const AboutWrapper = styled.div`
 
 
 const ProfilePicture = 'https://videowikistorage.blob.core.windows.net/cast-dev-db/WhatsApp Image 2023-04-16 at 1.09.00 AM.jpeg';
-const ProfileDescription = 'Hello, I am Aman Bishnoi - a web developer with expertise in building custom, responsive websites using the latest web development technologies like Python, Django, React, and REST framework. With experience working with cloud platforms like AWS and Azure, I aim to create web solutions that are both scalable and efficient. In my free time, I enjoy hiking, reading, and experimenting with new technologies.';
+const ProfileDescription = 'Hello, I am Aman Bishnoi, a passionate web developer with a proven track record of building custom, responsive websites using the latest web development technologies such as Python, Django, React, and REST framework. I specialize in developing scalable and efficient web solutions that help businesses achieve their goals. Currently, I am working as a tech lead at VideoWiki, where I lead a team of developers and work closely with stakeholders to deliver innovative and effective solutions. At VideoWiki, I leverage my expertise in cloud platforms like AWS and Azure to create high-performing web applications. In my free time, I love to explore new hiking trails, read books on technology, and experiment with emerging technologies to stay ahead of the curve.';
 
 const SocialContainer = styled.div`
   display: flex;
@@ -111,6 +111,7 @@ function About() {
           <SocialContainer>
             <SocialLink href="https://www.linkedin.com/in/aman-j-bishnoi/" target="_blank"><FaLinkedin /></SocialLink>
             <SocialLink href="https://www.instagram.com/amanb1145/" target="_blank"><FaInstagram /></SocialLink>
+            <SocialLink href="https://medium.com/@amanb1145" target="_blank"><FaMedium /></SocialLink>
           </SocialContainer>
         </AboutContent>
         <AboutImg src={ProfilePicture} alt="Profile Picture of ChatGPT" />

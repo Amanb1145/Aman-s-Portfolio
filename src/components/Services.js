@@ -57,10 +57,10 @@ const ServicesDescription = styled.p`
 `;
 
 
-function Services() {
+function Expertise() {
   return (
-    <ServicesContainer id="services">
-      <ServicesTitle>My Services</ServicesTitle>
+    <ServicesContainer id="expertise">
+      <ServicesTitle>My Expertise</ServicesTitle>
       <ServicesGrid>
         <ServicesItem>
           <ServicesIcon icon={faLaptopCode} />
@@ -90,4 +90,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Expertise;
