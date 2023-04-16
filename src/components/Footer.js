@@ -20,7 +20,7 @@ const FooterLogo = styled.a`
   font-weight: bold;
   color: #E54B4B;
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;

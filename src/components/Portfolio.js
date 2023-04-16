@@ -9,7 +9,7 @@ const PortfolioContainer = styled.section`
 const PortfolioTitle = styled.h2`
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 `;
 
 const PortfolioGrid = styled.div`

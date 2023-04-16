@@ -50,14 +50,18 @@ const AboutContent = styled.div`
 
 const AboutTitle = styled.h2`
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem; /* reduced margin */
 `;
+
 
 const AboutText = styled.p`
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 1rem;
+  color: #555555;
 `;
+
+
 
 const AboutWrapper = styled.div`
   display: flex;
@@ -66,14 +70,16 @@ const AboutWrapper = styled.div`
   align-items: center;
   max-width: 900px;
   width: 100%;
-  margin-top: 50px;
-
+  margin-top: 30px; /* reduced margin */
+  margin-bottom: 30px; /* added margin */
+  
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px; /* reduced margin */
   }
 `;
+
 
 const ProfilePicture = 'https://videowikistorage.blob.core.windows.net/cast-dev-db/WhatsApp Image 2023-04-16 at 1.09.00 AM.jpeg';
 const ProfileDescription = 'Hello, I am Aman Bishnoi - a web developer with expertise in building custom, responsive websites using the latest web development technologies like Python, Django, React, and REST framework. With experience working with cloud platforms like AWS and Azure, I aim to create web solutions that are both scalable and efficient. In my free time, I enjoy hiking, reading, and experimenting with new technologies.';
@@ -88,7 +94,7 @@ const SocialContainer = styled.div`
 const SocialLink = styled.a`
   font-size: 1.5rem;
   margin: 0 10px;
-  color: #000;
+  color: #555555;
 
   &:hover {
     color: #0077b5;
