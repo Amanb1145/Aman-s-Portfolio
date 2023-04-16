@@ -32,10 +32,6 @@ const NavLogo = styled.a`
   text-decoration: none;
   transition: all 0.3s ease;
 
-  &:hover {
-    color: #555555;
-  }
-
   @media screen and (max-width: 600px) {
     margin-bottom: 20px;
   }
