@@ -111,6 +111,9 @@ function Navbar() {
         <NavItem>
           <NavLink href="#expertise">Expertise</NavLink>
         </NavItem>
+        <NavItem>
+          <NavLink href="#portfolio">Portfolio</NavLink>
+        </NavItem>
       </NavMenu>
     </NavContainer>
   );

@@ -85,6 +85,7 @@ function Footer() {
         <FooterLink href="#about">About</FooterLink>
         <FooterLink href="#skills">Skills</FooterLink>
         <FooterLink href="#expertise">Expertise</FooterLink>
+        <FooterLink href="#portfolio">Portfolio</FooterLink>
       </FooterLinks>
       <FooterLinks>
         <FooterLink href="mailto:amanb1145@gmail.com" target="_blank">amanb1145@gmail.com</FooterLink>
