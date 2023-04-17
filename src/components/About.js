@@ -9,6 +9,7 @@ const AboutContainer = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #FFFFFF;
 
 
   @media (max-width: 768px) {

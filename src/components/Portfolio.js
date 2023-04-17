@@ -76,7 +76,7 @@ function Portfolio() {
         <PortfolioItem>
           <PortfolioImage src="https://videowikistorage.blob.core.windows.net/cast-dev-db/vw1.png" alt="Project 1" />
           <PortfolioOverlay className="overlay">
-            <PortfolioTitleOverlay>VideoWIki Editor</PortfolioTitleOverlay>
+            <PortfolioTitleOverlay>VideoWiki Editor</PortfolioTitleOverlay>
           </PortfolioOverlay>
         </PortfolioItem>
         <PortfolioItem>
@@ -106,7 +106,7 @@ function Portfolio() {
         <PortfolioItem>
           <PortfolioImage src="https://videowikistorage.blob.core.windows.net/cast-dev-db/swarm.png" alt="Project 6" />
           <PortfolioOverlay className="overlay">
-            <PortfolioTitleOverlay>VideoWIki Partnership with Swarm</PortfolioTitleOverlay>
+            <PortfolioTitleOverlay>VideoWiki Partnership with Swarm</PortfolioTitleOverlay>
           </PortfolioOverlay>
         </PortfolioItem>
         <PortfolioItem>

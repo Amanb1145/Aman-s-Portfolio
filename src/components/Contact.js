@@ -1,12 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPython, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faServer, faCubes } from '@fortawesome/free-solid-svg-icons';
-import { faDocker } from '@fortawesome/free-brands-svg-icons/faDocker';
-import { faGripfire } from '@fortawesome/free-brands-svg-icons/faGripfire';
-import { faGem } from '@fortawesome/free-solid-svg-icons/faGem';
-import { faCube } from '@fortawesome/free-solid-svg-icons/faCube';
+import { FaPython, FaReact, FaAws, FaDocker, FaFigma } from 'react-icons/fa';
+import { SiBlockchaindotcom, SiDjango, SiMicrosoftazure } from 'react-icons/si'
+import { TbBrandDjango } from 'react-icons/tb'
 
 const SkillsContainer = styled.section`
   padding: 100px 50px;
@@ -41,13 +37,20 @@ const SkillsItem = styled.li`
   font-size: 1.2rem;
   color: #555555;
   background-color: #F3F3F3;
-  padding: 15px 30px;
+  padding: 20px;
   margin: 10px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
 
   @media (max-width: 768px) {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 15px;
     margin: 5px;
   }
 `;
@@ -58,28 +61,31 @@ function Skills() {
       <SkillsTitle>Skills</SkillsTitle>
       <SkillsList>
         <SkillsItem>
-          <FontAwesomeIcon icon={faPython} /> Python
+          <FaPython /> <span>Python</span>
         </SkillsItem>
         <SkillsItem>
-          <FontAwesomeIcon icon={faServer} /> Django
+          <SiDjango /> <span>Django</span>
         </SkillsItem>
         <SkillsItem>
-          <FontAwesomeIcon icon={faReact} /> React
+          <FaReact /> <span>React</span>
         </SkillsItem>
         <SkillsItem>
-          <FontAwesomeIcon icon={faCube} /> REST Framework
+          <TbBrandDjango /> <span>REST Framework</span>
         </SkillsItem>
         <SkillsItem>
-          <FontAwesomeIcon icon={faGripfire} /> AWS
+          <FaAws /> <span>AWS</span>
         </SkillsItem>
         <SkillsItem>
-          <FontAwesomeIcon icon={faCubes} /> Azure
+          <SiMicrosoftazure /> <span>Azure</span>
         </SkillsItem>
         <SkillsItem>
-          <FontAwesomeIcon icon={faGem} /> Blockchain
+          <SiBlockchaindotcom /> <span>Blockchain</span>
         </SkillsItem>
         <SkillsItem>
-          <FontAwesomeIcon icon={faDocker} /> Docker
+          <FaDocker /> <span>Docker</span>
+        </SkillsItem>
+        <SkillsItem>
+          <FaFigma /> <span>Figma</span>
         </SkillsItem>
       </SkillsList>
     </SkillsContainer>
