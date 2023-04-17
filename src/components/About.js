@@ -10,6 +10,7 @@ const AboutContainer = styled.section`
   align-items: center;
   text-align: center;
 
+
   @media (max-width: 768px) {
     padding: 100px 20px;
   }
@@ -23,8 +24,8 @@ const AboutImg = styled.img`
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-left: 150px;
-
+  margin-bottom: 100px; /* updated margin */
+  margin-right: 100px;
   @media (max-width: 768px) {
     margin-left: 0;
     margin-bottom: 30px;
@@ -68,8 +69,7 @@ const AboutWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 900px;
-  width: 100%;
+  width: 75%;
   margin-top: 30px; /* reduced margin */
   margin-bottom: 30px; /* added margin */
   
@@ -92,13 +92,13 @@ const SocialContainer = styled.div`
 `;
 
 const SocialLink = styled.a`
-  font-size: 1.5rem;
-  margin: 0 10px;
-  color: #555555;
+font-size: 1.5rem;
+margin: 0 10px;
+color: #555555;
 
-  &:hover {
-    color: #0077b5;
-  }
+&:hover {
+  color: #0077b5; /* added property */
+}
 `;
 
 function About() {
