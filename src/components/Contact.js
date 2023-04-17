@@ -1,8 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaPython, FaReact, FaAws, FaDocker, FaFigma } from 'react-icons/fa';
-import { SiBlockchaindotcom, SiDjango, SiMicrosoftazure } from 'react-icons/si'
-import { TbBrandDjango } from 'react-icons/tb'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faServer, faCubes } from '@fortawesome/free-solid-svg-icons';
+import { faDocker } from '@fortawesome/free-brands-svg-icons/faDocker';
+import { faGripfire } from '@fortawesome/free-brands-svg-icons/faGripfire';
+import { faGem } from '@fortawesome/free-solid-svg-icons/faGem';
+import { faCube } from '@fortawesome/free-solid-svg-icons/faCube';
+
 
 const SkillsContainer = styled.section`
   padding: 100px 50px;
@@ -61,31 +66,28 @@ function Skills() {
       <SkillsTitle>Skills</SkillsTitle>
       <SkillsList>
         <SkillsItem>
-          <FaPython /> <span>Python</span>
+          <FontAwesomeIcon icon={faPython} /> Python
         </SkillsItem>
         <SkillsItem>
-          <SiDjango /> <span>Django</span>
+          <FontAwesomeIcon icon={faServer} /> Django
         </SkillsItem>
         <SkillsItem>
-          <FaReact /> <span>React</span>
+          <FontAwesomeIcon icon={faReact} /> React
         </SkillsItem>
         <SkillsItem>
-          <TbBrandDjango /> <span>REST Framework</span>
+          <FontAwesomeIcon icon={faCube} /> REST Framework
         </SkillsItem>
         <SkillsItem>
-          <FaAws /> <span>AWS</span>
+          <FontAwesomeIcon icon={faGripfire} /> AWS
         </SkillsItem>
         <SkillsItem>
-          <SiMicrosoftazure /> <span>Azure</span>
+          <FontAwesomeIcon icon={faCubes} /> Azure
         </SkillsItem>
         <SkillsItem>
-          <SiBlockchaindotcom /> <span>Blockchain</span>
+          <FontAwesomeIcon icon={faGem} /> Blockchain
         </SkillsItem>
         <SkillsItem>
-          <FaDocker /> <span>Docker</span>
-        </SkillsItem>
-        <SkillsItem>
-          <FaFigma /> <span>Figma</span>
+          <FontAwesomeIcon icon={faDocker} /> Docker
         </SkillsItem>
       </SkillsList>
     </SkillsContainer>
