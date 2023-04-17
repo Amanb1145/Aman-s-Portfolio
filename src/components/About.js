@@ -26,7 +26,6 @@ const AboutImg = styled.img`
   height: 200px;
   border-radius: 50%;
   margin-bottom: 100px; /* updated margin */
-  margin-right: 100px;
   @media (max-width: 768px) {
     margin-left: 0;
     margin-bottom: 30px;
